@@ -1,0 +1,88 @@
+* {
+  font-family: "segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+}
+.left {
+  box-sizing: border-box;
+  width: 25%;
+  height: 100vh;
+  background-color: rgb(50, 50, 90);
+  float: left;
+  color: aliceblue;
+  padding: 20px;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  border-radius: 60%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.name {
+  font-size: 19px;
+}
+.bio {
+  text-align: center;
+}
+.connect-button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+}
+.right {
+  width: 75%;
+  height: 100vh;
+  background-color: peachpuff;
+  float: left;
+  color: white;
+  overflow: auto;
+  box-sizing: border-box;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+}
+.nav-container h3 {
+  margin: 0;
+}
+.nav-a {
+  color: gray;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.nav a:hover {
+  color: black;
+  transition: ease-in-out 500ms;
+}
+.content {
+  margin: 30px 10px;
+  font-size: 30 px;
+  color: brown;
+}
+@media only screen and (max-width: 500px) {
+  .left {
+    float: none;
+    width: 100%;
+  }
+  .right {
+    float: none;
+    width: 100%;
+  }
+  .icon {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+}
